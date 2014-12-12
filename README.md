@@ -5,4 +5,4 @@ The code recognizes the 'CRVAL1' and 'CDELT1' in the fits header.
 
 To  run (replace filename with fits file):
 
-python fits_ascii.py filename
+  python fits_ascii.py filename
