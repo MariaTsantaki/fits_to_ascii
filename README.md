@@ -7,7 +7,10 @@ To  run (replace filename with fits file):
 
   python fits_ascii.py filename
   
-Dependancies
+Dependencies
 ============
-You need these modules: numpy, astropy, pyfits, argparse 
+You need these modules: * [numpy](http://numpy.org)
+                        * [Astropy](http://astropy.org)
+                        * [argparse](https://docs.python.org/3/library/argparse.html)
+                        * [pyfits](http://www.astropython.org/) 
 
