@@ -9,8 +9,5 @@ To  run (replace filename with fits file):
   
 Dependencies
 ============
-You need these modules: * [numpy](http://numpy.org)
-                        * [Astropy](http://astropy.org)
-                        * [argparse](https://docs.python.org/3/library/argparse.html)
-                        * [pyfits](http://www.astropython.org/) 
+You need these modules: [numpy](http://numpy.org), [Astropy](http://astropy.org), [argparse](https://docs.python.org/3/library/argparse.html), [pyfits](http://www.astropython.org/) 
 
