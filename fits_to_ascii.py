@@ -18,12 +18,16 @@ flux = np.array(flux, dtype=np.float64)
 start_wave = header['CRVAL1'] #initial wavelenght
 step = header['CDELT1'] #increment per pixel
 
-new_wave = []
-for i in range(0,len(flux)):
-	 start_wave = start_wave + step*i
-	 new_wave.append(start_wave)
+w0, dw, n = start_wave, step, len(flux)
+w = start_wave + step * n
+wave = np.linspace(w0, w, n, endpoint=False)
 
-data = Table([new_wave, flux], names=(str(header['CRVAL1']), str(step)))
+print args.input
+print 'step ', step
+print 'starting wavelength ', start_wave
+print 'last wavelength ', wave[-1]
+
+data = Table([wave, flux], names=(str(header['CRVAL1']), str(step)))
 ascii.write(data, args.input[:-5]+".dat", delimiter='\t')  #new file created
 print '----------------------------------'
 print 'fits to ascii: DONE'
